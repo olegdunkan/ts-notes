@@ -108,7 +108,7 @@ sum(new Rectangle(2, 2), new Circle(2)); //error
 //we will know why it was an error later 
 ```
 We have changed **type parameter list** adding constraint `IArea` on `T`.<br>
-**Constraint** is an **object type** in most broad sence.<br>
+**Constraint** is an **object type** in most broad sence. [Spec](https://github.com/Microsoft/TypeScript/blob/master/doc/spec.md#361-type-parameter-lists)<br>
 **Object type** is a main building block of whole type system in typescript. [Spec](https://github.com/Microsoft/TypeScript/blob/master/doc/spec.md#1.3)<br>
 Object type has members (properties, index (number and string) signatures, call signatures and construct signatures)<br>
 `IArea` is the name that has **type meaning** and reference to this name is an object type that has one `toArea` member (property) described as a **method signature**. <br>
