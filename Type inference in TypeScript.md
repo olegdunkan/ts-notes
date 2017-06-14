@@ -112,7 +112,7 @@ We have changed **type parameter list** adding constraint `IArea` on `T`.<br>
 **Object type** is a main building block of whole type system in typescript. [Spec](https://github.com/Microsoft/TypeScript/blob/master/doc/spec.md#1.3)<br>
 Object type has members (properties, index (number and string) signatures, call signatures and construct signatures)<br>
 `IArea` is the name that has **type meaning** and reference to this name is an object type that has one `toArea` member (property) described as a **method signature**. <br>
-Technically word `IArea` is a **type reference** in `var i:IArea` declaration.   
+(Technically word `IArea` is a **type reference** in `var i:IArea` declaration.)   
 That means we can expect that `T` type will have all members declared in `IArea`. 
 And all **named values** (parameters and variables declared inside function body) associated with type 'T', can access public members of `IArea`.
 ```ts
