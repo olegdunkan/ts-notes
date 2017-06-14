@@ -114,7 +114,7 @@ Object type has members (properties, index (number and string) signatures, call 
 `IArea` is the name that has **type meaning** and reference to this name is an object type that has one `toArea` member (property) described as a **method signature**. <br>
 (Technically word `IArea` is a **type reference** in `var i:IArea` declaration.)   
 That means we can expect that `T` type will have all members declared in `IArea`. 
-And all **named values** (parameters and variables declared inside function body) associated with type 'T', can access public members of `IArea`.
+And all **named values** (parameters and variables declared inside function body) associated with type `T`, can have access to public members of `IArea`.
 ```ts
 class A {
   private x:number;
